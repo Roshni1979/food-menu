@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum=0;
+        var count=0;
+        var str="<table border='1px solid black' style='border-collapse:collapse';> <tr style=color:red;><th>Items Ordered</th><th>Quantity</th><th>Price</th><th>Total Price</th><tr>";
+            var name=prompt("Enter your name");
+            var mob=prompt("enter mobile number");
+            var items=parseInt(prompt("enter the number of items you want to order"))
+            var i;
+            for(i=0;i<items;i++)
+            {
+                var dish=prompt("Enter the dish you want to order");
+                if(dish=='pizza')
+                {
+                    var cat=prompt("enter category")
+                    if(cat=='otc'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>OTC Pizza</td><td>"+qty+"</td><td>300</td><td>" + (qty*300) + "</td><tr>";
+                        sum+=parseInt(qty*300)
+                        count++;
+                    }
+                    if(cat=='margherita'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Marghetia Pizza</td><td>"+qty+"</td><td>350</td><td>" + (qty*350) + "</td><tr>";
+                        sum+=parseInt(qty*350)
+                        count++;
+                    }
+                    if(cat=='paneer'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Paneer Pizza</td><td>"+qty+"</td><td>300</td><td>" + (qty*300) + "</td><tr>";
+                        sum+=parseInt(qty*450)
+                        count++;
+                    }
+                    if(cat=='cheesecorn'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Cheese corn Pizza</td><td>"+qty+"</td><td>400</td><td>" + (qty*400) + "</td><tr>";
+                        sum+=parseInt(qty*450)
+                        count++;
+                    }
+                    if(cat=='vegetable'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Marghetia Pizza</td><td>"+qty+"</td><td>350</td><td>" + (qty*350) + "</td><tr>";
+                        sum+=parseInt(qty*350)
+                        count++;
+                    }
+                    if(cat=='pasta'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Marghetia Pizza</td><td>"+qty+"</td><td>400</td><td>" + (qty*400) + "</td><tr>";
+                        sum+=parseInt(qty*400)
+                        count++;
+                    }
+                }
+            
+                else if(dish=='burger'){
+                    var cat=prompt("enter category")
+                    if(cat=='cheese'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Cheese Burger</td><td>"+qty+"</td><td>200</td><td>" + (qty*200) + "</td><tr>";
+                        sum+=parseInt(qty*200)
+                        count++;
+                    }
+                    if(cat=='margherita'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Marghetia Pizza</td><td>"+qty+"</td><td>350</td><td>" + (qty*350) + "</td><tr>";
+                        sum+=parseInt(qty*350)
+                        count++;
+                    }
+                    if(cat=='paneer'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Paneer Pizza</td><td>"+qty+"</td><td>300</td><td>" + (qty*300) + "</td><tr>";
+                        sum+=parseInt(qty*450)
+                        count++;
+                    }
+                    if(cat=='cheesecorn'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Cheese corn Pizza</td><td>"+qty+"</td><td>400</td><td>" + (qty*400) + "</td><tr>";
+                        sum+=parseInt(qty*450)
+                        count++;
+                    }
+                    if(cat=='vegetable'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Marghetia Pizza</td><td>"+qty+"</td><td>350</td><td>" + (qty*350) + "</td><tr>";
+                        sum+=parseInt(qty*350)
+                        count++;
+                    }
+                    if(cat=='pasta'){
+                        var qty=prompt("enter quantity")
+                        str = str + "<tr><td style=color:green;>Marghetia Pizza</td><td>"+qty+"</td><td>400</td><td>" + (qty*400) + "</td><tr>";
+                        sum+=parseInt(qty*400)
+                        count++;
+                    }
+                }
+                else if(dish=="pasta"){
+                    var cat=prompt("enter category")
+                    if(cat=='alfredo'){
+                    var qty=prompt("enter quantity")
+                    str = str + "<tr><td style=color:green;>Alfredo Pasta</td><td>"+qty+"</td><td>250</td><td>"+(qty*250)+"</td></tr>";
+                    sum+=parseInt(qty*250)
+                    count++;
+                }
+                if(cat=='white sauce'){
+                    var qty=prompt("enter quantity")
+                    str = str + "<tr><td style=color:green;>White Sauce Pasta</td><td>"+qty+"</td><td>200</td><td>"+(qty*200)+"</td></tr>";
+                    sum+=parseInt(qty*200)
+                    count++;
+                    }
+                if(cat=='white brocoli'){
+                    var qty=prompt("enter quantity")
+                    str = str + "<tr><td style=color:green;>Brocoli White Pasta</td><td>"+qty+"</td><td>250</td><td>"+(qty*300)+"</td></tr>";
+                    sum+=parseInt(qty*300)
+                    count++;
+                }
+                if(cat=='red sauce'){
+                    var qty=prompt("enter quantity")
+                    str = str + "<tr><td style=color:green;>Red Sauce Pasta</td><td>"+qty+"</td><td>250</td><td>"+(qty*150)+"</td></tr>";
+                    sum+=parseInt(qty*150)
+                    count++;
+                }
+                if(cat=='cheese corn'){
+                    var qty=prompt("enter quantity")
+                    str = str + "<tr><td style=color:green;>Cheese Corn Pasta</td><td>"+qty+"</td><td>250</td><td>"+(qty*200)+"</td></tr>";
+                    sum+=parseInt(qty*200)
+                    count++;
+                }
+                if(cat=='pink sauce'){
+                    var qty=prompt("enter quantity")
+                    str = str + "<tr><td style=color:green;>Pink Sauce Pasta</td><td>"+qty+"</td><td>150</td><td>"+(qty*150)+"</td></tr>";
+                    sum+=parseInt(qty*150)
+                    count++;
+                }
+            }
+        }
+            
+        if(count==0){
+            document.write("given dish is not available");
+        }
+        else{
+            str=str + "<br><tr><td colspan='3' style=color:red;>Total Amount</td><td style=color:red;>"+ sum +"</td><tr></table>";
+                document.write(" <span style=margin-left:14%> Name: "+name+"</span><br> <span style=margin-left:13%>Mobile: "+mob+"<br>"+"</span>")
+                document.write(str);
+        }
+     
+        
+    </script>
+</body>
+</html>
